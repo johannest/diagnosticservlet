@@ -6,7 +6,7 @@
 	<artifactId>diagnosticservlet-addon</artifactId>
 	<packaging>jar</packaging>
 	<version>0.2.0</version>
-	<name>DiagnosticServlet Add-on</name>
+	<name>DiagnosticServlet</name>
 
 	<prerequisites>
 		<maven>3</maven>
