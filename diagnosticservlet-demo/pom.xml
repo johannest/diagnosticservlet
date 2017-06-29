@@ -50,11 +50,6 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.vaadin.johannest</groupId>
-			<artifactId>diagnosticservlet-addon</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-server</artifactId>
 		</dependency>
@@ -79,6 +74,11 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.vaadin.johannest</groupId>
+			<artifactId>diagnosticservlet-addon</artifactId>
+			<version>0.2.0</version>
 		</dependency>
 	</dependencies>
 
