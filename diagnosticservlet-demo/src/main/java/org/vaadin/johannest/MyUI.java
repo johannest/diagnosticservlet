@@ -29,14 +29,22 @@ public class MyUI extends UI {
         TextField textfield = new TextField("Test TextField");
         textfield.setId("test-textfield");
 
-        Grid<Person> grid = new Grid<>();
-        grid.setItems(getPersons());
-        grid.addColumn(Person::getName).setCaption("Name");
-        grid.addColumn(Person::getAge).setCaption("Age");
-        grid.setId("test-grid");
+        Grid<Person> gridSingle = new Grid<>();
+        gridSingle.setSelectionMode(Grid.SelectionMode.SINGLE);
+        gridSingle.setItems(getPersons());
+        gridSingle.addColumn(Person::getName).setCaption("Name");
+        gridSingle.addColumn(Person::getAge).setCaption("Age");
+        gridSingle.setId("test-gridSingle");
+
+        Grid<Person> gridMulti = new Grid<>();
+        gridMulti.setSelectionMode(Grid.SelectionMode.MULTI);
+        gridMulti.setItems(getPersons());
+        gridMulti.addColumn(Person::getName).setCaption("Name");
+        gridMulti.addColumn(Person::getAge).setCaption("Age");
+        gridMulti.setId("test-gridMulti");
 
 
-        layout.addComponents(button, textfield, grid);
+        layout.addComponents(button, textfield, gridSingle, gridMulti);
     }
 
     private List<Person> getPersons() {
